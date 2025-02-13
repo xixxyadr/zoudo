@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gothic Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #111;
+            color: #eee;
+            font-family: 'Garamond', serif;
+        }
+        input, textarea {
+            background-color: #222;
+            color: #ddd;
+            border: 1px solid #444;
+            padding: 10px;
+            width: 100%;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+        input:focus, textarea:focus {
+            border-color: #bb2525;
+            outline: none;
+            box-shadow: 0 0 5px #bb2525;
+        }
+        button {
+            background-color: #bb2525;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #990000;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="p-5 bg-black shadow-md flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-red-600">Gothic Store</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-red-500">Home</a></li>
+                <li><a href="shop.html" class="hover:text-red-500">Shop</a></li>
+                <li><a href="contact.html" class="hover:text-red-500">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="text-center py-10 px-10">
+        <h2 class="text-4xl font-bold text-red-500">Contact Us</h2>
+        <p class="text-gray-400 mt-3">Have any questions? Reach out to us!</p>
+        <div class="max-w-lg mx-auto mt-5 bg-black p-6 rounded-lg shadow-lg">
+            <form action="https://formspree.io/f/mgvolpkn" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-gray-400">Your Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div>
+                    <label class="block text-gray-400">Your Message</label>
+                    <textarea name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="w-full">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-5 mt-10 bg-black">
+        <p class="text-gray-500">&copy; 2025 Gothic Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
